@@ -15,7 +15,7 @@ import { fetchAllContainers } from '../../actions/containers';
 
 class Home extends React.Component {
   componentDidMount() {
-    this.props.fetchData('http://10.17.10.207:3000/api/v1/deploys/');
+    this.props.fetchData('http://10.17.10.207:5000/api/v1/deploys/');
   }
 
   render() {
@@ -26,7 +26,7 @@ class Home extends React.Component {
         </div>
 
         <div className="col-md-12">
-          <Button bsStyle="success"><i className="fa fa-plus" /> &nbsp;New</Button>
+          <a href="/new"><Button bsStyle="success"><i className="fa fa-plus" /> &nbsp;New</Button></a>
         </div>
 
         <div className="col-lg-12">
